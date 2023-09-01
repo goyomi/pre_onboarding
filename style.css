@@ -6,7 +6,6 @@
 
 /* header */
 .home_header {
-  /* box-shadow: 0 0 10px yellow; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +40,6 @@
 
 /* main */
 .grid_container {
-  /* box-shadow: 0 0 10px yellow; */
   margin: 75px 0px 120px 0px;
   width: 100%;
   display: grid;
@@ -63,13 +61,11 @@
 }
 
 .grid_container .card3 {
-  background-color: salmon;
   grid-column: 4/5;
   grid-row: 2/4;
 }
 
 .grid_container .card4 {
-  background-color: rebeccapurple;
   grid-column: 1/2;
   grid-row: 3/5;
 }
@@ -91,9 +87,242 @@
   grid-row: 4/5;
   background: url(./src/img/card7.jpg) no-repeat;
 }
-
 .grid_container .card8 {
   grid-column: 4/5;
   grid-row: 4/5;
   background: url(./src/img/card8.jpg) no-repeat;
+}
+
+/* card1 */
+.card1 .contents_wrapper {
+  padding: 137px 210px 30px;
+}
+
+.box.fin {
+  width: 107px;
+  margin: 0 auto;
+  padding: 10px 0px;
+  background-color: #ff565c;
+  color: #fff;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card1 .card1_heading {
+  margin: 30px auto 5px;
+  color: #fff;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 32px;
+  line-height: 49px; /* 153.125% */
+  letter-spacing: -0.471px;
+  text-transform: uppercase;
+}
+
+.card1 .card1_txt {
+  color: rgb(255, 255, 255, 0.7);
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+}
+
+.card1 .icon_list {
+  margin-top: 133px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.card1 .icon_list img {
+  margin-right: 11px;
+}
+
+/* card2 */
+.card2 .contents_wrapper {
+  padding: 30px 46px 21px 0px;
+}
+
+.card2 .box.fin {
+  margin: 0;
+}
+
+.card2 .card2_heading {
+  margin: 22px 0px 41px 25px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px; /* 125% */
+  letter-spacing: -0.2px;
+}
+
+.card2 .icon_list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.card2 .icon_list img {
+  margin-right: 11px;
+}
+
+/* card3 */
+.card3 .contents_wrapper {
+  background-color: #ff565c;
+  padding: 30px 26px 46px;
+}
+
+.card3 .card3_heading {
+  color: #fff;
+  font-family: Oswald;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 49px; /* 153.125% */
+  letter-spacing: -0.471px;
+  text-transform: uppercase;
+}
+
+.card3 p {
+  margin: 20px 0px 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+.card3 .rd_more_btn {
+  padding: 18px 64px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+/* card4 */
+.card4 .contents_wrapper {
+  padding: 35px 22px 33px 27.5px;
+  border: 1px solid #f2f3f6;
+}
+
+/* card5 */
+.card5 .contents_wrapper {
+  padding: 30px 154px 21px 0px;
+}
+
+.card5 .box.ent {
+  width: 157px;
+  padding: 10px 0px;
+  background-color: #ff565c;
+  color: #fff;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card5 .card5_heading {
+  margin: 19px 0px 44px 25px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px; /* 125% */
+  letter-spacing: -0.2px;
+}
+
+.card5 .icon_list {
+  margin-left: 25px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: #fff;
+}
+
+.card5 .icon_list img {
+  margin-right: 11px;
+}
+
+/* card6~8 */
+.card6 .contents_wrapper,
+.card7 .contents_wrapper,
+.card8 .contents_wrapper {
+  padding: 30px 46px 21px 0px;
+}
+
+.card6 .box.fin,
+.card7 .box.gam,
+.card8 .box.tec {
+  margin: 0;
+}
+
+.card7 .box.gam,
+.card8 .box.tec {
+  padding: 10px 0px;
+  background-color: #ff565c;
+  color: #fff;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card7 .box.gam {
+  width: 104px;
+}
+
+.card8 .box.tec {
+  width: 137px;
+}
+
+.card6 .card6_heading,
+.card7 .card7_heading {
+  margin: 22px 0px 41px 25px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px; /* 125% */
+  letter-spacing: -0.2px;
+}
+
+.card8 .card8_heading {
+  margin: 22px 0px 74px 25px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px; /* 125% */
+  letter-spacing: -0.2px;
+}
+
+.card6 .icon_list,
+.card7 .icon_list,
+.card8 .icon_list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.card6 .icon_list img,
+.card7 .icon_list img,
+.card8 .icon_list img {
+  margin-right: 11px;
 }
