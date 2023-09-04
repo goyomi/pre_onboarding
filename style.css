@@ -1,10 +1,11 @@
 .home_container {
   max-width: 1440px;
-  padding: 30px 40px 40px 38px;
+  margin: 0 auto;
 }
 
 /* header */
 .home_header {
+  padding: 28px 40px 32px 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,8 +40,7 @@
 
 /* main */
 .grid_container {
-  margin: 75px 0px 120px 0px;
-  width: 100%;
+  padding: 40px 45px 120px 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 274px);
@@ -214,17 +214,43 @@
 
 /* card4 */
 .card4 .contents_wrapper {
-  padding: 35px 22px 33px 27.5px;
+  padding: 30px 32px 18px 27.5px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #f2f3f6;
 }
 
-.card4 .stories_wrapper {
-  width: 261px;
+.contents_wrapper .card4_heading {
+  color: #1d1f24;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.531px;
+  text-transform: uppercase;
+}
+
+.card4 .story_wrapper {
+  margin: 28px 0px;
   display: flex;
-  gap: 25px;
+  position: relative;
+}
+
+.card4 .story_wrapper:not(:last-child)::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: -27.5px;
+  right: -22px;
+  bottom: -24px;
+  border-bottom: 1px solid #f2f3f6;
+}
+
+.card4 .story_wrapper:last-child {
+  margin-bottom: 0;
 }
 
 .card4 .num_txt {
+  margin-right: 26px;
   color: #1d1f24;
   font-family: Oswald;
   font-size: 18px;

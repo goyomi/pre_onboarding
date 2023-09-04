@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Deck.</title>
+    <link rel="icon" href="./src/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tablet_style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,11 +21,13 @@
       <header class="home_header">
         <nav class="header_nav">
           <ul class="nav_list">
-            <a href="#"
-              ><img
-                src="./src/logo.svg"
-                alt="Deck와 핑크색 온점이 찍힌 회사 로고"
-            /></a>
+            <li class="header_logo">
+              <a href="#"
+                ><img
+                  src="./src/logo.svg"
+                  alt="Deck와 핑크색 온점이 찍힌 회사 로고"
+              /></a>
+            </li>
             <li><a href="#">TECHNOLOGY</a></li>
             <li><a href="#">IDEAS</a></li>
             <li><a href="#">LEADERSHIP</a></li>
@@ -97,11 +101,35 @@
         <section class="card card4">
           <div class="contents_wrapper">
             <h4 class="card4_heading">Featured stories</h4>
-            <div class="stories_wrapper">
-              <div class="num_txt">1</div>
-              <div class="story_txt">
+            <div class="story_wrapper">
+              <span class="num_txt">1</span>
+              <span class="story_txt">
                 Compare Prices: Find The Best Computer Accessory
-              </div>
+              </span>
+            </div>
+            <div class="story_wrapper">
+              <span class="num_txt">2</span>
+              <span class="story_txt">
+                Why You Should Use External IT Support
+              </span>
+            </div>
+            <div class="story_wrapper">
+              <span class="num_txt">3</span>
+              <span class="story_txt">
+                Why You Should Use In-House IT Support
+              </span>
+            </div>
+            <div class="story_wrapper">
+              <span class="num_txt">4</span>
+              <span class="story_txt">
+                Choosing The Best Audio Player Software
+              </span>
+            </div>
+            <div class="story_wrapper">
+              <span class="num_txt">5</span>
+              <span class="story_txt">
+                Addiction When Gambling Becomes A Problem
+              </span>
             </div>
           </div>
         </section>
@@ -128,7 +156,9 @@
         <section class="card card6">
           <div class="contents_wrapper">
             <div class="box fin">Finance</div>
-            <h3 class="card6_heading">Optimize Your PC’s Performance With These 3 Programs</h3>
+            <h3 class="card6_heading">
+              Optimize Your PC’s Performance With These 3 Programs
+            </h3>
             <ul class="icon_list">
               <li>
                 <a href=""><img src="./src/arrow_icon.svg" alt="" />275</a>
@@ -139,12 +169,15 @@
               <li>
                 <a href=""><img src="./src/chat_icon.svg" alt="" />12</a>
               </li>
+            </ul>
           </div>
         </section>
         <section class="card card7">
           <div class="contents_wrapper">
             <div class="box gam">Gaming</div>
-            <h3 class="card7_heading">Search Engine Optimization And Advertising</h3>
+            <h3 class="card7_heading">
+              Search Engine Optimization And Advertising
+            </h3>
             <ul class="icon_list">
               <li>
                 <a href=""><img src="./src/arrow_icon.svg" alt="" />275</a>
@@ -155,6 +188,7 @@
               <li>
                 <a href=""><img src="./src/chat_icon.svg" alt="" />12</a>
               </li>
+            </ul>
           </div>
         </section>
         <section class="card card8">
@@ -171,39 +205,45 @@
               <li>
                 <a href=""><img src="./src/chat_icon.svg" alt="" />12</a>
               </li>
+            </ul>
           </div>
         </section>
       </main>
-    </div>
-    <footer>
-      <div class="footer_wrapper">
-        <div class="footer_logo_wrap">
-          <img src="./src/footer-logo.svg" alt="">
-          <span>© 2018 Deck<br>Component based UI Kit</span>
-        </div>
-        <ul class="footer_nav_list">
-          <li><a href="#">TECHNOLOGY</a></li>
-          <li><a href="#">LEADERSHIP</a></li>
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">ENTERTAINMENT</a></li>
-          <li><a href="#">IDEAS</a></li>
-          <li><a href="#">VIDEO</a></li>
-          <li><a href="#">FINANCE</a></li>
-          <li class="empty"></li>
-        </ul>
-        <div class="footer_contact_wrap">
-          <ul class="footer_sns_list">
-            <li><span>Follow us:</span></li>
-            <li><a href="#" class="sns instagram"></a></li>
-            <li><a href="#" class="sns pinterest"></a></li>
-            <li><a href="#" class="sns twitter"></a></li>
-            <li><a href="#" class="sns facebook"></a></li>
+      <footer>
+        <div class="footer_wrapper">
+          <div class="footer_logo_wrap">
+            <img src="./src/footer-logo.svg" alt="" />
+            <span>© 2018 Deck<br />Component based UI Kit</span>
+          </div>
+          <ul class="footer_nav_list">
+            <li><a href="#">TECHNOLOGY</a></li>
+            <li><a href="#">LEADERSHIP</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">ENTERTAINMENT</a></li>
+            <li><a href="#">IDEAS</a></li>
+            <li><a href="#">VIDEO</a></li>
+            <li><a href="#">FINANCE</a></li>
+            <li class="empty"></li>
           </ul>
-          <form action="#" method="get">
-            <input class="email_inp" type="email" name="email" placeholder="Your E-mail"><button class="submit_btn" type="submit">Subscribe</button>
-          </form>
+          <div class="footer_contact_wrap">
+            <ul class="footer_sns_list">
+              <li><span>Follow us:</span></li>
+              <li><a href="#" class="sns instagram"></a></li>
+              <li><a href="#" class="sns pinterest"></a></li>
+              <li><a href="#" class="sns twitter"></a></li>
+              <li><a href="#" class="sns facebook"></a></li>
+            </ul>
+            <form action="#" method="get">
+              <input
+                class="email_inp"
+                type="email"
+                name="email"
+                placeholder="Your E-mail"
+              /><button class="submit_btn" type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
