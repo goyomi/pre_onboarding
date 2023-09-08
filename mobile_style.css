@@ -9,6 +9,80 @@
     padding: 20px 20px;
   }
 
+  .home_header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #ebebeb;
+    z-index: -1;
+  }
+
+  /* main */
+  .grid_container {
+    padding: 20px 19px 100px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* card */
+  .card1 {
+    order: 1;
+  }
+  .card4 {
+    order: 2;
+  }
+  .card2 {
+    order: 3;
+  }
+  .card3 {
+    order: 4;
+  }
+  .card6 {
+    order: 5;
+  }
+  .card7,
+  .card8 {
+    display: none;
+  }
+
+  /* card1 */
+  .card1 .contents_wrapper {
+    padding: 87px 30px 30px;
+  }
+
+  .card1 .card1_heading {
+    margin: 20px auto 77px;
+    font-size: 26px;
+  }
+
+  .card1 .card1_txt {
+    display: none;
+  }
+
+  /* card2 */
+  .card2 .contents_wrapper {
+    padding: 30px 66px 21px 0px;
+  }
+
+  /* card3 */
+  .card3 .contents_wrapper {
+    padding: 37px 28px 40px 25px;
+  }
+
+  .card3 .card3_heading {
+    font-size: 26px;
+    line-height: 40px; /* 153.846% */
+    letter-spacing: -0.382px;
+  }
+
+  /* card6 */
+  .card6 .contents_wrapper {
+    padding: 30px 66px 21px 0px;
+  }
+
   /* footer */
   .footer_wrapper {
     padding: 40px 55px 62px 21px;
