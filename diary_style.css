@@ -1,13 +1,24 @@
 /* reset css */
-
 body,
 h1,
-h2 {
+h3 {
   padding: 0;
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 img {
+  vertical-align: top;
+}
+
+button {
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
   vertical-align: top;
 }
 
@@ -22,7 +33,12 @@ img {
   position: absolute;
 }
 
-/* body */
+/* html, body */
+
+html {
+  font-family: Pretendard;
+}
+
 body {
   background-color: #fffaf0;
 }
@@ -30,11 +46,14 @@ body {
 /* header */
 header {
   width: 100%;
+  position: fixed;
   background-color: white;
+  z-index: 100;
 }
 
 .header_wrapper {
   width: 1224px;
+  max-width: calc(100% - 60px);
   height: 120px;
   margin: auto;
   display: flex;
@@ -42,9 +61,149 @@ header {
   justify-content: space-between;
 }
 
-@media (min-width: 320px) {
-  /* header */
-  .header_wrapper {
-    max-width: calc(100% - 60px);
-  }
+.header_wrapper .welcome_txt {
+  position: absolute;
+  top: 140px;
+  right: 30px;
+}
+
+.header_wrapper .under_box {
+  box-shadow: inset 0px -8px 0 0 rgba(255, 79, 110, 0.8);
+}
+
+/* main */
+.container {
+  padding-top: 120px;
+  max-width: calc(100% - 60px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .diary_input {
+  padding-top: 56px;
+}
+
+.diary_input .input_title {
+  font-size: 1rem;
+  font-weight: 700;
+  background: url(./src/diary/heart.svg) no-repeat 0 center / 32px;
+  padding-left: 32px;
+}
+
+.diary_input .input_style {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 0 12px 15px;
+  border: none;
+  border-bottom: 1px solid #677880;
+  border-radius: 4px 4px 0px 0px;
+  font-size: 1rem;
+}
+
+.diary_input .textarea_style {
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 0 326px 16px;
+  margin: 16px 0;
+  border: 1px solid #677880;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.diary_input .diary_submit_btn {
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 4px;
+  background-color: #29363d;
+  color: #fff;
+}
+
+.card_container {
+  padding-top: 94px;
+}
+
+.card_container .card {
+  margin-bottom: 76px;
+  border-style: solid;
+  border-width: 4px 1px 1px 1px;
+  border-color: #677880;
+  position: relative;
+}
+
+.card_container .card::before,
+.card_container .card::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+}
+
+.card_container .card::before {
+  background: #fffaf0 url(./src/diary/quote-start.svg) no-repeat 0 0 / contain;
+  top: -20px;
+  left: 30px;
+}
+
+.card_container .card::after {
+  background: #fffaf0 url(./src/diary/quote-end.svg) no-repeat 0 0 / contain;
+  bottom: -20px;
+  right: 30px;
+}
+
+.card .card_txt_wrap {
+  padding: 64px 48px;
+  margin-top: 5px;
+  border-top: 1px solid #677880;
+}
+
+.card .card_title {
+  font-size: 1rem;
+  color: #29363d;
+}
+
+.card .card_date {
+  float: right;
+  font-size: 0.75rem;
+  line-height: 0.895rem;
+  color: #677880;
+}
+
+.card .card_contents {
+  clear: both;
+  margin-top: 20px;
+  font-size: 0.875rem;
+  line-height: 1.225rem;
+  color: #5a6a72;
+}
+
+/* btn */
+.card_container .btn_group {
+  width: 111px;
+  padding: 4px 0px;
+  position: absolute;
+  bottom: -20px;
+  left: calc((100% / 2) - 64px);
+  border: 1px solid #677880;
+  border-radius: 24px;
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_group span {
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  line-height: 50%;
+  background-color: #d8ddde;
+  margin: 0 4px;
+}
+
+.btn_group button {
+  opacity: 80%;
 }
