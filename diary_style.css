@@ -229,3 +229,26 @@ header {
 .btn_group button {
   opacity: 80%;
 }
+
+.btn_group button:hover {
+  opacity: initial;
+  cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+  .header_wrapper .welcome_txt {
+    position: static;
+  }
+
+  .header_wrapper .header_end {
+    display: flex;
+    align-items: center;
+  }
+
+  .header_wrapper .welcome_txt:after {
+    content: "|";
+    display: inline-block;
+    color: #d8ddde;
+    margin: 0 24px;
+  }
+}
