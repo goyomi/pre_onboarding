@@ -252,3 +252,26 @@ header {
     margin: 0 24px;
   }
 }
+
+@media all and (min-width: 1024px) {
+  .container {
+    width: 1224px;
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .container .card_container {
+    flex-basis: 875px;
+  }
+
+  .container .card_container::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 1536px;
+    background-color: #ff4f6e;
+    position: absolute;
+    top: 0;
+    margin-left: -40px;
+  }
+}
